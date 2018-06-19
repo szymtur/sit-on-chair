@@ -18,20 +18,15 @@ function sliderArrows(){
 
 
 function hideCaption(){
-    let allFigures = document.querySelectorAll("#main-section figure");
+    let allFigures = $("#main-section").find("figure");
+    
+    allFigures.mouseenter(function(){
+        $(this).find(".caption").fadeOut();
+    });   
         
-    for (let i=0; i<allFigures.length; i++){
-        allFigures[i].addEventListener("mouseover", show);
-        allFigures[i].addEventListener("mouseout", hide);
-    }
-    
-    function show(){        
-        this.querySelector(".caption").style.visibility = "hidden";
-    }
-    
-    function hide(){
-        this.querySelector(".caption").style.visibility = "visible";
-    }
+    allFigures.mouseleave(function(){
+        $(this).find(".caption").fadeIn();
+    });
 }
 
 
