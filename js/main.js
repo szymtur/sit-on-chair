@@ -10,6 +10,10 @@ function sliderArrows(){
         prevArrow: '<i class="fa fa-angle-left"></i>',
         nextArrow: '<i class="fa fa-angle-right"></i>',
     });
+    
+    if (/iphone|ipod|ipad|blackberry|Android|webOS|IEMobile/i.test(navigator.userAgent)){
+        $('.slick-arrow').css('display', 'none');
+    }
 }
 
 
