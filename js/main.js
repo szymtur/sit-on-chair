@@ -1,6 +1,7 @@
 $(document).ready(function () {
     sliderArrows();
     hideCaption();
+    fixHover();
     menuShowHide();
 });
 
@@ -26,6 +27,14 @@ function hideCaption(){
         
     allFigures.mouseleave(function(){
         $(this).find(".caption").fadeIn();
+    });
+}
+
+function fixHover(){
+    $('*').on('touchstart', function () {
+        $(this).trigger('hover');
+    }).on('touchend', function () {
+        $(this).trigger('blur');
     });
 }
 
