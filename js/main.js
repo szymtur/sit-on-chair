@@ -69,7 +69,7 @@ function scrollTop(){
     
     buttonSubmit.on('click', function(event){
         event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 900, 'linear');
+        $('html, body').animate({scrollTop: 0}, 1500, 'linear');
         return false;
     })
 }
@@ -79,7 +79,7 @@ function scrollBottom(){
     let buttons = $('#main-header').find('.see-more-btn');
     
     buttons.on('click', function(){
-        $('html, body').animate({scrollTop: $(document).height()}, 900, 'linear');
+        $('html, body').animate({scrollTop: $(document).height()}, 1500, 'linear');
         return false;        
     })
 }
