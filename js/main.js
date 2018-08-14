@@ -3,6 +3,8 @@ $(document).ready(function () {
     hideCaption();
     fixHover();
     menuShowHide();
+    scrollTop();
+    scrollBottom();
 });
 
 
@@ -59,4 +61,25 @@ let allVisibleLi = document.querySelectorAll(".nav>ol>li");
             this.querySelector("ul").style.display = "none"; 
         }
     }
+}
+
+
+function scrollTop(){
+    let buttonSubmit = $('#contact').find('input[type="submit"]');
+    
+    buttonSubmit.on('click', function(event){
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 900, 'linear');
+        return false;
+    })
+}
+
+
+function scrollBottom(){
+    let buttons = $('#main-header').find('.see-more-btn');
+    
+    buttons.on('click', function(){
+        $('html, body').animate({scrollTop: $(document).height()}, 900, 'linear');
+        return false;        
+    })
 }
