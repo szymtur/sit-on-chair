@@ -2,13 +2,13 @@
 
 ![](layout/layout.png)
 
-###Link:
+### Link:
 [https://szymtur.github.io/sit-on-chair](https://szymtur.github.io/sit-on-chair/)
 
-###Description:
+### Description:
 Reflected layout of the website.
 
-###Technologies used:
+### Technologies used:
 - HTML5
 - CSS3
 - JavaScript
