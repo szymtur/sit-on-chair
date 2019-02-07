@@ -6,7 +6,7 @@
 [https://szymtur.github.io/sit-on-chair](https://szymtur.github.io/sit-on-chair/)
 
 ### Description:
-Reflected layout of the website.
+The CSS Layout Workshop.
 
 ### Technologies used:
 - HTML5
