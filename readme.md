@@ -1,6 +1,6 @@
 # Sit On Chair
 
-![](layout/layout.png)
+![](images/layout.png)
 
 ### Link:
 [https://szymtur.github.io/sit-on-chair](https://szymtur.github.io/sit-on-chair/)
